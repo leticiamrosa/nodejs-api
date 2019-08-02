@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 
-mongoose.createConnection("mongodb://localhost/noderest", {
-  useMongoClient: true
+mongoose.connect("mongodb://localhost/noderest", {
+  useNewUrlParser: true
 });
 mongoose.Promise = global.Promise;
 
